@@ -1,11 +1,11 @@
 # Python---TV-Project-
 
-##Overview
+## Overview
 This Python program allows users to interactively analyze TV show data stored in a .csv file. The tool provides various options to search, sort, and compute statistics from a dataset of TV shows, including features such as finding top-rated shows, computing average scores, and exporting sorted results.
 
 Developed as a final project for CSC 110 - Spring 2024.
 
-##Features
+## Features
 Load and parse a .csv file containing TV show data
 
 Search for shows by title, rating, or score
@@ -18,7 +18,7 @@ Find shows with higher scores than a given title
 
 Sort all shows by release year and write to a new file (year-sorted-shows.csv)
 
-##Input File Format
+## Input File Format
 The program reads from a CSV file with the following structure:
 
 python-repl
@@ -36,7 +36,7 @@ Year (int): Year of first release
 
 Score (int): Viewer rating score (0–100)
 
-##How It Works
+## How It Works
 Upon running, the program:
 
 Prompts the user for the name of a valid .csv file
@@ -60,7 +60,7 @@ Edit
 6 -- Sort all lists by year and write results to a new file  
 7 -- Quit
 
-##How to Run
+## How to Run
 Prerequisites:
 Python 3.x installed on your system
 
@@ -79,7 +79,7 @@ Edit
 python tv_project.py
 Follow on-screen prompts to interact with the menu.
 
-##Example Interaction
+## Example Interaction
 sql
 Copy
 Edit
@@ -99,7 +99,7 @@ TITLE                                   RATING   YEAR  SCORE
 Breaking Bad                            TV-MA    2008  96
 Game of Thrones                         TV-MA    2011  89
 ...
-##Design Highlights
+## Design Highlights
 File validation with retry logic for bad input
 
 Linear and binary search algorithms for optimal search behavior
@@ -110,7 +110,7 @@ Modular design: All major operations are handled in separate, reusable functions
 
 Clean error handling for common input issues
 
-##Output
+## Output
 When option 6 is selected, the sorted list is saved as:
 
 year-sorted-shows.csv
@@ -124,7 +124,7 @@ Title,Rating,Year,Score
 Friends,TV-PG,1994,88
 Breaking Bad,TV-MA,2008,96
 ...
-##Technologies Used
+## Technologies Used
 Python 3
 
 File I/O (open, read, write)
